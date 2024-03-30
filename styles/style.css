@@ -49,7 +49,7 @@
   background: transparent;
   text-transform: uppercase;
   font-size: 14px;
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font);
 }
 
 .button:focus {
@@ -67,7 +67,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font);
   text-transform: uppercase;
   margin-bottom: 100px;
 }
@@ -167,7 +167,7 @@
   text-transform: lowercase;
 }
 
-@supports((text-stroke: 1px var(--background-color)) or (-webkit-text-stroke: 1px var(--background-color))) {
+@supports ((text-stroke: 1px var(--background-color)) or (-webkit-text-stroke: 1px var(--background-color))) {
   .label {
     -webkit-text-stroke: 1px var(--background-color);
     text-stroke: 1px var(--background-color);
@@ -320,7 +320,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-color: var(--background-color);
+  background-color: var(--btn-color);
   transform-origin: left;
   transform: scaleX(0%);
   transition: transform 0.5s ease-in-out;
