@@ -247,7 +247,7 @@
           </div>
         </div>
       </article>
-      <div>
+      <div class="wrapper">
         <buttton
           type="button"
           class="button button-decoration floppy-button"
@@ -259,20 +259,26 @@
           <span class="button__text">Сохранить на память</span>
         </buttton>
       </div>
-    </main>
-    <dialog class="modal" id="modal">
-      <div class="modal__wrapper">
-        <svg class="modal__svg" viewBox="0 0 40 40" fill="white">
-          <use href="svg/floppy.svg#floppy"/>
-        </svg>
-        <div>
-          <h2 class="modal__title">Вставьте дискету, чтобы продолжить</h2>
+      <dialog class="modal" id="modal">
+        <div class="modal__wrapper">
+          <svg class="modal__svg" viewBox="0 0 40 40" fill="white">
+            <use href="svg/floppy.svg#floppy"/>
+          </svg>
+          <div>
+            <h2 class="modal__title">Вставьте дискету, чтобы продолжить</h2>
+          </div>
         </div>
-      </div>
-      <form method="dialog">
-        <button class="button button-decoration modal__button">OK</button>
-      </form>
-    </dialog>
+        <form method="dialog">
+          <button
+            type="button"
+            class="button button-decoration modal__button"
+            onclick="window['modal'].close();"
+          >
+            OK
+          </button>
+        </form>
+      </dialog>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
