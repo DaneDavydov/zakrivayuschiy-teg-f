@@ -15,7 +15,7 @@
   --background-color: var(--second-color, #000);
   --color: var(--accent-color, #00cc14ff);
   --background-image: var(--background-image-dark);
-  --font-bold: 800;
+  --font-bold: 785;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,6 +23,6 @@
     --background-color: var(--second-color, #000);
     --color: var(--accent-color, #00cc14ff);
     --background-image: var(--background-image-dark);
-    --font-bold: 800;
+    --font-bold: 785;
   }
 }
